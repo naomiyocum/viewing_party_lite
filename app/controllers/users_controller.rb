@@ -36,6 +36,7 @@ class UsersController < ApplicationController
 
     if new_user.save
       session[:user_id] = new_user.id
+      UserMailer.with(user: new_user).welcome_email.deliver_later
       redirect_to dashboard_path
       flash[:success] = "Welcome, #{new_user.name}!"
     else
