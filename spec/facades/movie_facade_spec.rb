@@ -12,7 +12,7 @@ RSpec.describe MovieFacade do
 
     describe '.searched_movies' do
       it 'returns movies with the select word in its title' do
-        expect(described_class.searched_movies('princess').first.title).to eq('The Princess')
+        expect(described_class.searched_movies('princess').first.title).to eq('Super Mario Brothers: Great Mission to Rescue Princess Peach')
       end
     end
 

@@ -69,7 +69,7 @@ RSpec.describe 'New View Party Page', type: :feature do
     it 'the new view party should also show on dashboards of users that were invited' do
       within '#form' do
         fill_in :duration, with: 400
-        fill_in :datetime, with: '2023-02-02 01:00:00 UTC '
+        fill_in :datetime, with: DateTime.now + 10.days
         check "invite_users_#{user_2.id}"
         click_button 'Create Party'
       end
