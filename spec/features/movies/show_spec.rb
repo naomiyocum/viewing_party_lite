@@ -54,7 +54,7 @@ RSpec.describe 'The Movie Show Page', type: :feature do
       end
 
       it 'Count of reviews' do
-        expect(page).to have_content('7 Reviews:')
+        expect(page).to have_content('8 Reviews:')
       end
 
       it 'Each reviews author and info' do
