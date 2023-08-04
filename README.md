@@ -5,7 +5,7 @@
 
 <figure>
 <img src="https://user-images.githubusercontent.com/102825498/209204028-6b4fd8c7-0ddf-4c61-92e6-7aab85cb7125.png" alt="User Dashboard" style="width:100%">
-<figcaption align="center"><b>Example view of a user's dashboard (http://localhost:3000/dashboard)</b></figcaption>
+<figcaption align="center"><b>Example view of a user's dashboard</b></figcaption>
 </figure><br><br>
 
 ## Table of Contents
@@ -16,6 +16,8 @@
 * [Usage](#usage)
 
 ## General Info
+Check out the [deployed version](https://viewing-party-lite.fly.dev/)!
+
 Viewing Party Lite is an application in which users can explore movie options and create a viewing party event for themselves and other users of the application. Features include browsing top rated movies, searching for movies by title, and viewing movie data such as vote average, cast, runtime, and reviews.
 
 This is the base repo for the [Viewing Party Lite project](https://backend.turing.edu/module3/projects/viewing_party_lite) used for Turing's Backend Module 3. Example wireframes to follow are found [here](https://backend.turing.edu/module3/projects/viewing_party_lite/wireframes).
@@ -47,7 +49,7 @@ rails db:{drop,create,migrate,seed}
 bundle exec figaro install
 ```
 
-The Figaro installation will create a commented  `config/application.yml` file. This is where you want to add your [Movie DB](https://developer.themoviedb.org/docs) API key.
+The Figaro installation will create a commented  `config/application.yml` file. This is where you want to add your [Movie DB](https://developer.themoviedb.org/docs) API key - `da_key: #{YOUR_API_KEY}`.
 
 Then open up your server by running `rails s`. 
 
