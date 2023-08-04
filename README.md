@@ -44,11 +44,17 @@ Then, run the following commands:
 cd viewing_party_lite
 bundle install
 rails db:{drop,create,migrate,seed}
-rails s
+bundle exec figaro install
 ```
+
+The Figaro installation will create a commented  `config/application.yml` file. This is where you want to add your [Movie DB](https://developer.themoviedb.org/docs) API key.
+
+Then open up your server by running `rails s`. 
 
 Lastly, head to your web browser and type `localhost:3000` and click enter.
 
 Now you're on the main page! Go ahead and register as a new user and search for your favorite movie to create a viewing party!
+
+To run tests - `bundle exec rspec`
 
 
